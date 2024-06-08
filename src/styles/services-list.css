@@ -1,0 +1,31 @@
+.service__item span i {
+  font-size: 2.5rem;
+  color: #be0000;
+}
+
+.service__item{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center ;
+}
+
+.service__item h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.service__item .section__description{
+text-align: center;
+}
+
+.service__item h6:hover {
+  color: #be0000;
+}
+
+@media only screen and (max-width: 768px) {
+  .service__item h6 {
+    font-size: 1.1rem;
+  }
+}
