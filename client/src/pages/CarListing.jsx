@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 // import CommonSection from "../components/UI/CommonSection";
 import CarItem from "../components/UI/CarItem";
-import carData from "../assets/data/carData";
+// import carData from "../assets/data/carData";
 
 const CarListing = () => {
   const [sortOption, setSortOption] = useState("");
+  const [carData, setCarData] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/cars', {
+          method: 'GET'
+        });
+        const data = await response.json();
+        console.log(data,"api data");
+        setCarData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
 
   const handleSortChange = (e) => {
     setSortOption(e.target.value);
   };
+
 
   const sortedCarData = [...carData].sort((a, b) => {
     if (sortOption === "low") {

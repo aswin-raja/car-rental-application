@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-import carData from "../assets/data/carData";
+// import carData from "../assets/data/carData";
 import { Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import { useParams } from "react-router-dom";
@@ -9,12 +9,34 @@ import { useParams } from "react-router-dom";
 
 const CarDetails = () => {
   const { slug } = useParams();
+  const [carData, setCarData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/cars', {
+          method: 'GET'
+        });
+        const data = await response.json();
+        console.log(data,"api data");
+        setCarData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
+
 
   const singleCarItem = carData.find((item) => item.carName === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [singleCarItem]);
+
+  if (!singleCarItem) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Helmet title={singleCarItem.carName}>
