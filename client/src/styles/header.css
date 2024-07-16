@@ -44,22 +44,9 @@
   padding: 20px 0px;
 }
 
-.logo h1 a span {
-  font-size: 1.5rem;
-}
-
-.logo h1 a i {
-  font-size: 2.2rem;
-}
-
-.logo h1 a {
-  text-decoration: none;
-  color: #000d6b;
-  font-weight: 700;
-}
-
-.logo h1 {
-  line-height: 1.5rem;
+.logo {
+width:40%;
+height:40%;
 }
 
 .header__location span i {
@@ -83,6 +70,7 @@
   border: none;
   outline: none;
   border-radius: 5px;
+
 }
 
 .header__btn a {
@@ -92,7 +80,8 @@
   text-decoration: none;
   color:white;
   justify-content: flex-end;
-  font-size: 0.9rem;
+  font-size:16px;
+  font-weight: bold;
 }
 
 .header__btn a:hover {
@@ -103,7 +92,7 @@
 
 .main__navbar {
   padding: 15px 0px;
-  background: #ffffff;
+  background: #f1f1f1;
 }
 
 .mobile__menu i {
@@ -171,7 +160,7 @@ a:hover {
   }
 
   .mobile__menu {
-    display: block;
+    display: none;
   }
 
   .navigation {
@@ -179,30 +168,43 @@ a:hover {
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     z-index: 9999;
     display: none;
   }
 
   .menu {
-    width: 250px;
-    height: 100%;
-    background: #fff;
+    width:100%;
+    height: 25%;
+    background: #dddddd;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    row-gap: 2rem;
-    justify-content: center;
+    row-gap: 5px;
+    justify-content: flex-start;
   }
 
   .menu a {
     color: #000d6b;
     font-weight: 600;
     font-size: 0.9rem;
+   
   }
 
   .menu__active {
     display: block;
+  }
+
+  .header__btn a {
+
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  
+.logo {
+  width:100px;
+  height:40px;
   }
 }

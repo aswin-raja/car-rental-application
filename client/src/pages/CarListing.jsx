@@ -1,43 +1,42 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "reactstrap";
+import React from "react";
+import { Container, Row } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 // import CommonSection from "../components/UI/CommonSection";
 import CarItem from "../components/UI/CarItem";
-// import carData from "../assets/data/carData";
+import carData from "../assets/data/carData";
 
 const CarListing = () => {
-  const [sortOption, setSortOption] = useState("");
-  const [carData, setCarData] = useState("");
+  // const [carData, setCarData] = useState(carData);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/cars', {
-          method: 'GET'
-        });
-        const data = await response.json();
-        console.log(data,"api data");
-        setCarData(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:5000/cars', {
+  //         method: 'GET'
+  //       });
+  //       const data = await response.json();
+  //       console.log(data,"api data");
+  //       setCarData(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
-  const handleSortChange = (e) => {
-    setSortOption(e.target.value);
-  };
+  // const handleSortChange = (e) => {
+  //   setSortOption(e.target.value);
+  // };
 
 
-  const sortedCarData = [...carData].sort((a, b) => {
-    if (sortOption === "low") {
-      return a.price - b.price;
-    } else if (sortOption === "high") {
-      return b.price - a.price;
-    }
-    return 0;
-  });
+  // const sortedCarData = [...carData].sort((a, b) => {
+  //   if (sortOption === "low") {
+  //     return a.price - b.price;
+  //   } else if (sortOption === "high") {
+  //     return b.price - a.price;
+  //   }
+  //   return 0;
+  // });
 
   return (
     <Helmet title="Cars">
@@ -46,7 +45,7 @@ const CarListing = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="12">
+            {/* <Col lg="12">
               <div className=" d-flex align-items-center gap-3 mb-5">
                 <span className=" d-flex align-items-center gap-2">
                   <i className="ri-sort-asc"></i> Sort By
@@ -58,9 +57,9 @@ const CarListing = () => {
                   <option value="high">High to Low</option>
                 </select>
               </div>
-            </Col>
+            </Col> */}
 
-            {sortedCarData.map((item) => (
+            {carData.map((item) => (
               <CarItem item={item} key={item.id} />
             ))}
           </Row>

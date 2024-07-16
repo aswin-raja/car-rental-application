@@ -1,20 +1,19 @@
 import React from "react";
 import { Col } from "reactstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../../styles/car-item.css";
 
 const CarItem = (props) => {
-  const { imgUrl, model, carName, automatic, speed, price } = props.item;
+  const { imgUrl, model, carName, automatic, price } = props.item;
 
   // WhatsApp message text
   const messageText = `Hi, I am interested in the ${carName}. Here are the details:
 - Model: ${model}
 - Automatic: ${automatic}
-- Speed: ${speed}
 - Price: $${price}.00 per day`;
 
   // WhatsApp URL
-  const whatsappUrl = `https://wa.me/918098436516?text=${encodeURIComponent(messageText)}`;
+  const whatsappUrl = `https://wa.me/916374004539?text=${encodeURIComponent(messageText)}`;
 
   return (
     <Col lg="4" md="4" sm="6" className="mb-5">
@@ -34,21 +33,21 @@ const CarItem = (props) => {
               <i className="ri-car-line"></i> {model}
             </span>
             <span className=" d-flex align-items-center gap-1">
-              <i className="ri-settings-2-line"></i> {automatic}
+              {/* <i className="ri-settings-2-line"></i> {automatic} */}
             </span>
             <span className=" d-flex align-items-center gap-1">
-              <i className="ri-timer-flash-line"></i> {speed}
+            <i className="ri-settings-2-line"></i> {automatic}
             </span>
           </div>
 
           
-            <Link to={`/cars/${carName}`}><button className=" w-50 car__item-btn car__btn-rent">Details </button></Link>
+            {/* <Link to={`/cars/${carName}`}><button className=" w-50 car__item-btn car__btn-rent">Details </button></Link> */}
          
 
           
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <button className=" w-50 car__item-btn car__btn-details">
-              Enquiry
+            <button className=" w-100 car__item-btn car__btn-details">
+              Book Now
               </button>
             </a>
          

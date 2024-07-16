@@ -30,21 +30,21 @@ Our fleet is regularly maintained to ensure safety and reliability on the road.
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Discover our commitment to excellence.
+                  <i className="ri-checkbox-circle-line"></i> Discover our commitment to excellence.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Your satisfaction is our top priority
+                  <i className="ri-checkbox-circle-line"></i> Your satisfaction is our top priority
                 </p>
               </div>
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i>Explore the top benefits of choosing us.
+                  <i className="ri-checkbox-circle-line"></i>Explore the top benefits of choosing us.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Unlock convenience and reliability.
+                  <i className="ri-checkbox-circle-line"></i> Unlock convenience and reliability.
                 </p>
               </div>
             </div>

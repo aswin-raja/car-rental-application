@@ -5,9 +5,6 @@ import Header from "../components/Header/Header";
 import { Container, Row, Col } from "reactstrap";
 import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
-// import carData from "../assets/data/carData";
-// import CarItem from "../components/UI/CarItem"
-import Testimonial from "../components/UI/Testimonial";
 import CarListing from "./CarListing";
 import Contact from "./Contact";
 
@@ -75,7 +72,7 @@ const Home = () => {
   
 
       {/* =========== testimonial section =========== */}
-      <section id="testimonials">
+      {/* <section id="testimonials">
         <Container>
           <Row>
             <Col lg="12" className="mb-4 text-center">
@@ -86,7 +83,7 @@ const Home = () => {
             <Testimonial />
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       <section id="contact">
         <Container>

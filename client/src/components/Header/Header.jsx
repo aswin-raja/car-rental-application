@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, } from "reactstrap";
+import Logo from "../../assets/all-images/logo.png"
 import "../../styles/header.css";
 
 const navLinks = [
@@ -20,10 +21,7 @@ const navLinks = [
     path: "#service",
     display: "Service",
   },
-  {
-    path: "#testimonials",
-    display: "Testimonials",
-  },
+
 ];
 
 const Header = () => {
@@ -34,14 +32,14 @@ const Header = () => {
   return (
     <header className="header">
       {/* ============ header top ============ */}
-      <div className="header__top">
+      {/* <div className="header__top">
         <Container>
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +91 80984 36516
+                  <i className="ri-phone-fill"></i> +91 80984 36516
                 </span>
               </div>
             </Col>
@@ -50,7 +48,7 @@ const Header = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
 
 
@@ -59,13 +57,18 @@ const Header = () => {
       <div className="main__navbar">
         <Container>
           <div className="navigation__wrapper d-flex align-items-center justify-content-between">
-            <span className="mobile__menu">
-              <i class="ri-menu-line" onClick={toggleMenu}></i>
-            </span>
+            {/* <span className="mobile__menu">
+              <i className="ri-menu-line" onClick={toggleMenu}></i>
+            </span> */}
+            <div >
+              <img src={Logo} alt="logo" className="logo"/>
+            </div>  
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+             
               <div className="menu">
                 {navLinks.map((item, index) => (
+                  <>
                   <a
                     href={item.path}
                     
@@ -73,6 +76,8 @@ const Header = () => {
                   >
                     {item.display}
                   </a>
+                
+                  </>
                 ))}
               </div>
               
@@ -81,8 +86,8 @@ const Header = () => {
             <div className="nav__right">
 
              <button className="header__btn btn">
-                <a href="tel:+918098436516">
-                  <i class="ri-phone-line"></i> Enquire Now
+                <a href="tel:+916374004539">
+                  <i className="ri-phone-line"></i> +916374004539
                 </a>
               </button>
             </div>
