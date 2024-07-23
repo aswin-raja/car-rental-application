@@ -34,7 +34,7 @@ h6 {
 
 a {
   text-decoration: none !important;
-  color: unset;
+  color: yellow;
 }
 
 a:hover {

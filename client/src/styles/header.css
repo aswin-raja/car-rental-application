@@ -23,7 +23,7 @@
 .header__top__help i {
   background: #fff;
   color: #000d6b;
-  padding: 2px 4px;
+  padding: 1px 1px;
   border-radius: 50px;
   font-size: 0.7rem;
 }
@@ -45,8 +45,8 @@
 }
 
 .logo {
-width:40%;
-height:40%;
+width:200px;
+height:70px;
 }
 
 .header__location span i {
@@ -91,7 +91,7 @@ height:40%;
 /* ================ main navbar styles =========== */
 
 .main__navbar {
-  padding: 15px 0px;
+  padding: 0px 0px;
   background: #f1f1f1;
 }
 
@@ -116,6 +116,7 @@ height:40%;
   text-decoration: none !important;
   transition: 0.3s;
   font-weight:600;
+  font-style: italic;
 }
 
 
@@ -152,11 +153,21 @@ a:hover {
   color: #f9a826;
 }
 
+.header__btn_mobile {
+  background: #be0000 !important;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  
+}
+
 @media only screen and (max-width: 768px) {
   .header__top,
   .header__middle,
   .nav__right {
     display: block;
+  
   }
 
   .mobile__menu {
@@ -200,6 +211,12 @@ a:hover {
 
     font-size:16px;
     font-weight: bold;
+  }
+
+  .main__navbar{
+    display: flex;
+    align-items: center;
+    height:60px;
   }
 
   

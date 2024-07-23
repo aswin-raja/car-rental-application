@@ -1,54 +1,64 @@
-// import all images from assets/images directory
-import img01 from "../all-images/cars-img/nissan-offer.png";
-import img02 from "../all-images/cars-img/offer-toyota.png";
-import img03 from "../all-images/cars-img/bmw-offer.png";
-import img04 from "../all-images/cars-img/nissan-offer.png";
-import img05 from "../all-images/cars-img/offer-toyota.png";
-import img06 from "../all-images/cars-img/mercedes-offer.png";
-import img07 from "../all-images/cars-img/toyota-offer-2.png";
-import img08 from "../all-images/cars-img/mercedes-offer.png";
+// // import all images from assets/images directory
+// import img01 from "../all-images/cars-img/nissan-offer.png";
+// import img02 from "../all-images/cars-img/offer-toyota.png";
+// import img03 from "../all-images/cars-img/bmw-offer.png";
+// import img04 from "../all-images/cars-img/nissan-offer.png";
+// import img05 from "../all-images/cars-img/offer-toyota.png";
+// import img06 from "../all-images/cars-img/mercedes-offer.png";
+// import img07 from "../all-images/cars-img/toyota-offer-2.png";
+// import img08 from "../all-images/cars-img/mercedes-offer.png";
+
+import carimg01 from "../all-images/cars-img/Bolero 2024.webp";
+import carimg02 from "../all-images/cars-img/Ford Figo Freestyle 2022.webp";
+import carimg03 from "../all-images/cars-img/Glanza 2023 AT.webp";
+import carimg04 from "../all-images/cars-img/Hyundai Creta 2021 MT.webp";
+import carimg05 from "../all-images/cars-img/Swift 2024.webp";
+import carimg06 from "../all-images/cars-img/Toyota Urban Cruiser 2021 AT.webp";
+
+
+
 
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
+    brand: "Mahendra",
     rating: 112,
-    carName: "Tesla Malibu",
-    imgUrl: img01,
-    model: "Model 3",
-    price: 50,
+    carName: "Bolero ",
+    imgUrl: carimg01,
+    model: "Model-2024",
+    price: 2200,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
-    automatic: "Automatic",
+    automatic: "Manual",
     description:
       " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
   {
     id: 2,
-    brand: "Toyota",
+    brand: "Ford",
     rating: 102,
-    carName: "Toyota Aventador",
-    imgUrl: img02,
+    carName: "Ford Figo Freestyle ",
+    imgUrl: carimg02,
     model: "Model-2022",
-    price: 50,
+    price: 1600,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
-    automatic: "Automatic",
+    automatic: "Manual",
     description:
       "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
   {
     id: 3,
-    brand: "BMW",
+    brand: "Toyota",
     rating: 132,
-    carName: "BMW X3",
-    imgUrl: img03,
-    model: "Model-2022",
-    price: 65,
+    carName: "Glanza",
+    imgUrl: carimg03,
+    model: "Model-2023",
+    price: 1700,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -59,28 +69,28 @@ const carData = [
 
   {
     id: 4,
-    brand: "Nissan",
+    brand: "Hyundai",
     rating: 102,
-    carName: "Nissan Mercielago",
-    imgUrl: img04,
-    model: "Model-2022",
-    price: 70,
+    carName: "Hyundai Creta",
+    imgUrl: carimg04,
+    model: "Model-2021",
+    price: 1700,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
-    automatic: "Automatic",
+    automatic: "Manual",
     description:
       "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
   {
     id: 5,
-    brand: "Ferrari",
+    brand: "Maruti",
     rating: 94,
-    carName: "Ferrari Camry",
-    imgUrl: img05,
-    model: "Model-2022",
-    price: 45,
+    carName: "Swift",
+    imgUrl: carimg05,
+    model: "Model-2024",
+    price: 1600,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -91,12 +101,12 @@ const carData = [
 
   {
     id: 6,
-    brand: "Mercedes",
+    brand: "Toyota",
     rating: 119,
-    carName: "Mercedes Benz XC90",
-    imgUrl: img06,
-    model: "Model-2022",
-    price: 85,
+    carName: "Toyota Urban Cruiser",
+    imgUrl: carimg06,
+    model: "Model-2021",
+    price: 1700,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -105,37 +115,6 @@ const carData = [
       " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
-  {
-    id: 7,
-    brand: "Audi",
-    rating: 82,
-    carName: "Audi Fiesta",
-    imgUrl: img07,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
-    description:
-      " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
-  },
-
-  {
-    id: 8,
-    brand: "Colorado",
-    rating: 52,
-    carName: "Rolls Royce Colorado",
-    imgUrl: img08,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
-    description:
-      " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
-  },
 ];
 
 export default carData;

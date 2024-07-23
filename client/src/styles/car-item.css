@@ -40,7 +40,14 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
-
+.car__img{
+  width:300px;
+  height:200px;
+}
+.car-image{
+  width:300px;
+  height:200px;
+}
 @media only screen and (max-width: 992px) {
   .car__item h4 {
     font-size: 1.1rem;

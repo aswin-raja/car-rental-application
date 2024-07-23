@@ -1,14 +1,15 @@
 import weddingcar from "../all-images/service-image/wedding-car.jpeg"
 import cartrip from "../all-images/service-image/car-trip.jpg"
-import airporttransfer from "../all-images/service-image/airport-transfer.jpeg"
+import citytransfer from "../all-images/service-image/airport-transfer.jpeg"
+import airporttransfer from "../all-images/service-image/airport.jpeg"
 import unlimiteddrive from "../all-images/service-image/unlimited-drive.avif"
 import pickup from "../all-images/service-image/pick-up.jpeg"
 
 const serviceData = [
   {
     id: 1,
-    title: "City Transfer",
-    image: airporttransfer,
+    title: "City Transfer - Taxi Services",
+    image: citytransfer,
     desc: "Make your city transfers smooth and stress-free with our reliable service. Whether you're heading to a business meeting or exploring the sights, count on us to get you there safely and on time",
   },
 
@@ -30,7 +31,7 @@ const serviceData = [
     id: 4,
     title: "Wedding Cars",
     image: weddingcar,
-    desc: "Planning your trip should be a breeze. With our user-friendly booking platform, you can reserve your vehicle in just a few clicks. Say goodbye to long queues and complicated reservation processes.",
+    desc: "Arrive in style and elegance with our luxurious wedding cars. Our fleet includes sleek limousines, vintage classics, and modern luxury vehicles, ensuring a grand entrance on your special day.",
   },
 
   {

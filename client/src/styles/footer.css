@@ -1,5 +1,5 @@
 .footer {
-  background:#be0000;
+  background:#830303;
   padding-top: 50px;
   padding-bottom: 15px;
 }
@@ -28,14 +28,14 @@
   background: transparent !important;
 }
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   text-decoration: none;
   font-weight: 300;
   transition: 0.3s;
 }
 
 .quick__link a {
-  color: rgba(255, 255, 255, 0.715);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 300;
   transition: 0.3s;
@@ -51,7 +51,7 @@ a {
 }
 
 .office__info {
-  color: rgba(255, 255, 255, 0.715);
+  color: rgb(255, 255, 255);
   font-weight: 300;
 }
 
