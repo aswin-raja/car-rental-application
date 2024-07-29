@@ -70,10 +70,10 @@ const Footer = () => {
               <p className="office__info">Rajalakshmi Nagar</p>
               <p className="office__info">Parvathipuram, Nagercoil</p>
               <p className="office__info">
-                Phone: <a href="tel:+916374004539">+916374004539</a>
+                Phone: <a href="tel:+919385680828">+919385680828</a>
               </p>
               <p className="office__info">
-                Email: <a href="mailto:info@vdrive.in">info@vdrive.in</a>
+                Email: <a href="mailto:vdrivecar@gmail.com">vdrivecar@gmail.com</a>
               </p>
             </div>
           </Col>

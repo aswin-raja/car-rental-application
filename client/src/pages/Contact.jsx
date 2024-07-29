@@ -21,7 +21,7 @@ const socialLinks = [
 ];
 
 const Contact = () => {
-  const whatsappNumber = "+916374004539";
+  const whatsappNumber = "+919385680828";
   const [formData, setFormData] = useState({
     name: "",
     phoneNumber: "",

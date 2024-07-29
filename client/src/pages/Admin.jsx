@@ -29,9 +29,11 @@ const AdminPanel = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://3.108.61.37:5000/cars', {
+      const response = await fetch('https://vdrive.in/index.php/cars', {
+        method: 'GET',
         headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('admin_token')}`
+          'Authorization': 'Bearer mysecuretoken',
+          'Content-Type': 'application/json'
         }
       });
       if (!response.ok) {
@@ -49,12 +51,13 @@ const AdminPanel = () => {
 
   const handleAddCar = async (postData) => {
     try {
-      const response = await fetch('http://3.108.61.37:5000/cars', {
+      const response = await fetch('https://vdrive.in/index.php/cars', {
         method: 'POST',
-        body: postData,
         headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('admin_token')}`
-        }
+          'Authorization': 'Bearer mysecuretoken',
+          
+        },
+        body:postData,
       });
       if (!response.ok) {
         throw new Error('Network response was not ok');

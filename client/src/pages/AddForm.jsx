@@ -31,7 +31,7 @@ const AddCarForm = ({ onAddCar }) => {
       postData.append('price', formData.price);
       postData.append('automatic', formData.automatic);
       if (imgFile) {
-        postData.append('imgUrl', imgFile);
+        postData.append('image', imgFile);
       }
 
       await onAddCar(postData); // Call the onAddCar function passed from AdminPanel
@@ -51,7 +51,7 @@ const AddCarForm = ({ onAddCar }) => {
         <option value="Manual">Manual</option>
         <option value="Automatic">Automatic</option>
       </select>
-      <input type="file" name="imgUrl" onChange={handleFileChange} />
+      <input type="file" name="image" onChange={handleFileChange} />
       <button type="submit">Add Car</button>
     </form>
   );

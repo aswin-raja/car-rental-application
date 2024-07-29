@@ -75,8 +75,8 @@ const Header = () => {
               {/* Button with number */}
               {showNumberButton && (
                 <button className="header__btn btn">
-                  <a href="tel:+916374004539">
-                    <i className="ri-phone-line"></i> +916374004539
+                  <a href="tel:+919385680828">
+                    <i className="ri-phone-line"></i> +919385680828
                   </a>
                 </button>
               )}
@@ -84,7 +84,7 @@ const Header = () => {
               {/* "Call Now" button */}
               {showCallNowButton && (
                 <button className="header__btn_mobile btn">
-                  <a href="tel:+916374004539">
+                  <a href="tel:+919385680828">
                     <i className="ri-phone-line"></i> Call Now
                   </a>
                 </button>

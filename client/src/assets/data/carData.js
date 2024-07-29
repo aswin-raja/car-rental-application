@@ -34,14 +34,13 @@ const carData = [
     description:
       " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
-
   {
     id: 2,
-    brand: "Ford",
-    rating: 102,
-    carName: "Ford Figo Freestyle ",
-    imgUrl: carimg02,
-    model: "Model-2022",
+    brand: "Maruti",
+    rating: 94,
+    carName: "Swift",
+    imgUrl: carimg05,
+    model: "Model-2024",
     price: 1600,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -50,25 +49,8 @@ const carData = [
     description:
       "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
-
   {
     id: 3,
-    brand: "Toyota",
-    rating: 132,
-    carName: "Glanza",
-    imgUrl: carimg03,
-    model: "Model-2023",
-    price: 1700,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
-    description:
-      "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
-  },
-
-  {
-    id: 4,
     brand: "Hyundai",
     rating: 102,
     carName: "Hyundai Creta",
@@ -84,13 +66,13 @@ const carData = [
   },
 
   {
-    id: 5,
-    brand: "Maruti",
-    rating: 94,
-    carName: "Swift",
-    imgUrl: carimg05,
-    model: "Model-2024",
-    price: 1600,
+    id: 4,
+    brand: "Toyota",
+    rating: 132,
+    carName: "Glanza",
+    imgUrl: carimg03,
+    model: "Model-2023",
+    price: 1700,
     speed: "20kmpl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
@@ -99,8 +81,10 @@ const carData = [
       "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
+  
+  
   {
-    id: 6,
+    id: 5,
     brand: "Toyota",
     rating: 119,
     carName: "Toyota Urban Cruiser",
@@ -113,6 +97,22 @@ const carData = [
     automatic: "Automatic",
     description:
       " Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
+  },
+  
+  {
+    id: 6,
+    brand: "Ford",
+    rating: 102,
+    carName: "Ford Figo Freestyle ",
+    imgUrl: carimg02,
+    model: "Model-2022",
+    price: 1600,
+    speed: "20kmpl",
+    gps: "GPS Navigation",
+    seatType: "Heated seats",
+    automatic: "Manual",
+    description:
+      "Introducing our [Car Model], a blend of style and performance. With advanced features and spacious interiors, it promises comfort and safety on every drive. Experience the thrill of the road like never before with the [Car Model]",
   },
 
 ];

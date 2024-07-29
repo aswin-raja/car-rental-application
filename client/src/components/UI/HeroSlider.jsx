@@ -59,7 +59,7 @@ const HeroSlider = () => {
         <Container>
           <div className="slider__content ">
             {/* <h4 className="text-light mb-3">Rent Starts From 300 Per Day</h4> */}
-            <h1 className="text-light mb-4">Wedding Cars </h1>
+            <h1 className="text-dark mb-4">Wedding Cars </h1>
 
             {/* <button className="btn reserve__btn mt-4">
               <Link to="/cars">Reserve Now</Link>
